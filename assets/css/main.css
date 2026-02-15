@@ -4987,12 +4987,13 @@ a img {
 }
 
 .user {
-    text-align: center;
-    font-size: 60px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
+  text-align: center;
+  font-size: 16px;           /* <-- NON 60px */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
 .user p {
@@ -5127,37 +5128,32 @@ a img {
 }
 /* === TECH ICONS CLEAN === */
 
+/* === TECH ICONS CLEAN (Devicon + SimpleIcons) === */
+
 .tech {
   text-align: center;
-}
-
-.tech i {
-  font-size: 42px;
   margin: 10px;
 }
 
-.tech .tech-icon {
-  height: 42px;
-  width: 42px;
+/* devicon (icone font) */
+.tech i.tech-icons {
+  font-size: 42px;
   margin: 10px;
   vertical-align: middle;
 }
 
-/* === FIX: keep tech icons small (override template image rules) === */
-
+/* simpleicons (icone img) */
 .tech img.tech-icon {
-  width: 42px !important;
-  height: 42px !important;
-  max-width: 42px !important;
-  max-height: 42px !important;
-  display: inline-block !important;
-  margin: 10px !important;
-  vertical-align: middle !important;
+  width: 42px;
+  height: 42px;
+  margin: 10px;
+  vertical-align: middle;
+  display: inline-block;
 }
 
-.tech i.tech-icons {
-  font-size: 42px !important;
-  margin: 10px !important;
-  vertical-align: middle !important;
+/* descrizione sotto */
+.tech p {
+  font-size: 16px;
 }
+
 
