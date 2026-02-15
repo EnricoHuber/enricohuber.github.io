@@ -5142,3 +5142,22 @@ a img {
   margin: 10px;
   vertical-align: middle;
 }
+
+/* === FIX: keep tech icons small (override template image rules) === */
+
+.tech img.tech-icon {
+  width: 42px !important;
+  height: 42px !important;
+  max-width: 42px !important;
+  max-height: 42px !important;
+  display: inline-block !important;
+  margin: 10px !important;
+  vertical-align: middle !important;
+}
+
+.tech i.tech-icons {
+  font-size: 42px !important;
+  margin: 10px !important;
+  vertical-align: middle !important;
+}
+
