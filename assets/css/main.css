@@ -5132,3 +5132,25 @@ a img {
   width: auto;
   margin: 10px;
 }
+
+/* --- Tech icons sizing (Devicon + SVG) --- */
+.tech .tech-icon {
+  height: 42px;
+  width: 42px;
+  margin: 10px;
+  vertical-align: middle;
+}
+
+/* Devicon (font icons) */
+.tech i.tech-icons,
+.tech i.tech-icon {
+  font-size: 42px;
+  margin: 10px;
+  vertical-align: middle;
+}
+
+/* Optional: keep things centered */
+.tech {
+  text-align: center;
+}
+
