@@ -5125,32 +5125,20 @@ a img {
     margin: 0;
     color: #fff
 }
+/* === TECH ICONS CLEAN === */
 
-.tech i,
-.tech img {
-  height: 42px;
-  width: auto;
+.tech {
+  text-align: center;
+}
+
+.tech i {
+  font-size: 42px;
   margin: 10px;
 }
 
-/* --- Tech icons sizing (Devicon + SVG) --- */
 .tech .tech-icon {
   height: 42px;
   width: 42px;
   margin: 10px;
   vertical-align: middle;
 }
-
-/* Devicon (font icons) */
-.tech i.tech-icons,
-.tech i.tech-icon {
-  font-size: 42px;
-  margin: 10px;
-  vertical-align: middle;
-}
-
-/* Optional: keep things centered */
-.tech {
-  text-align: center;
-}
-
