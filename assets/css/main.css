@@ -5280,7 +5280,7 @@ a img {
 }
 
 .logo-track img {
-  height: 60px;   /* ← DIMENSIONE LOGHI */
+  height: 10px;   /* ← DIMENSIONE LOGHI */
   width: auto;
   opacity: 0.8;
   transition: 0.3s;
