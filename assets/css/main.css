@@ -5154,4 +5154,114 @@ a img {
   font-size: 16px;
 }
 
+/* =========================
+   Companies Logo Ticker
+   ========================= */
+
+#companies {
+  width: 90%;
+  margin: 60px auto 0 auto;
+  max-width: 960px;
+}
+
+@media only screen and (min-width: 550px) {
+  #companies {
+    width: 80%;
+  }
+}
+
+.companies-subtitle {
+  font-size: 16px;
+  margin-top: 10px;
+  color: #555;
+}
+
+/* container */
+.logo-ticker {
+  position: relative;
+  overflow: hidden;
+  margin: 25px auto 0 auto;
+  padding: 18px 0;
+  border-radius: 14px;
+  background: #fff;
+}
+
+/* fade edges (nice effect) */
+.logo-ticker::before,
+.logo-ticker::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 80px;
+  height: 100%;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.logo-ticker::before {
+  left: 0;
+  background: linear-gradient(to right, #fff 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+.logo-ticker::after {
+  right: 0;
+  background: linear-gradient(to left, #fff 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+/* animated track */
+.logo-track {
+  display: flex;
+  align-items: center;
+  gap: 46px;
+  width: max-content;
+  animation: ticker-scroll 28s linear infinite;
+}
+
+/* stop on hover (desktop) */
+.logo-ticker:hover .logo-track {
+  animation-play-state: paused;
+}
+
+/* each logo */
+.logo-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 56px;
+  min-width: 120px;
+  padding: 0 6px;
+}
+
+.logo-item img {
+  height: 46px;
+  width: auto;
+  max-width: 160px;
+  opacity: 0.9;
+  filter: grayscale(100%);
+  transition: all 0.25s ease;
+}
+
+.logo-item img:hover {
+  opacity: 1;
+  filter: grayscale(0%);
+  transform: translateY(-1px);
+}
+
+/* animation */
+@keyframes ticker-scroll {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+/* reduced motion accessibility */
+@media (prefers-reduced-motion: reduce) {
+  .logo-track {
+    animation: none;
+  }
+  .logo-ticker {
+    overflow-x: auto;
+  }
+}
+
+
 
