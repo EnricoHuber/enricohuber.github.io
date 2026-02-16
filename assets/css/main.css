@@ -5264,4 +5264,36 @@ a img {
 }
 
 
+/* ===== Companies marquee ===== */
+
+.logo-slider {
+  overflow: hidden;
+  width: 100%;
+  margin-top: 40px;
+}
+
+.logo-track {
+  display: flex;
+  align-items: center;
+  gap: 80px;
+  animation: scroll-logos 25s linear infinite;
+}
+
+.logo-track img {
+  height: 60px;   /* ← DIMENSIONE LOGHI */
+  width: auto;
+  opacity: 0.8;
+  transition: 0.3s;
+}
+
+.logo-track img:hover {
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+/* animazione */
+@keyframes scroll-logos {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
 
