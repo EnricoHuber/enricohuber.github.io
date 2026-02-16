@@ -5308,7 +5308,7 @@ a img {
 .companies-strip .track {
   display: flex;
   align-items: center;
-  gap: 40px;
+  gap: 60px;
   white-space: nowrap;
   animation: companies-scroll 18s linear infinite;
 }
@@ -5318,9 +5318,9 @@ a img {
 .companies-strip svg,
 .companies-strip object,
 .companies-strip embed {
-  height: 28px !important;     /* <<< QUI LA DIMENSIONE */
+  height: 44 !important;     /* <<< QUI LA DIMENSIONE */
   width: auto !important;
-  max-height: 28px !important;
+  max-height: 44 !important;
   display: block;
 }
 
