@@ -5297,3 +5297,34 @@ a img {
   100% { transform: translateX(-50%); }
 }
 
+/* ===== Companies strip: hard clamp sizes ===== */
+
+.companies-strip {
+  width: 100%;
+  overflow: hidden;
+  padding: 20px 0;
+}
+
+.companies-strip .track {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  white-space: nowrap;
+  animation: companies-scroll 18s linear infinite;
+}
+
+/* prende IMG + SVG + OBJECT + EMBED (tutto) */
+.companies-strip img,
+.companies-strip svg,
+.companies-strip object,
+.companies-strip embed {
+  height: 28px !important;     /* <<< QUI LA DIMENSIONE */
+  width: auto !important;
+  max-height: 28px !important;
+  display: block;
+}
+
+@keyframes companies-scroll {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
