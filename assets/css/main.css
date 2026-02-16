@@ -5222,20 +5222,15 @@ a img {
   animation-play-state: paused;
 }
 
-/* each logo */
 .logo-item {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 56px;
-  min-width: 120px;
-  padding: 0 6px;
+  height: 70px;
+  min-width: 160px;
 }
 
 .logo-item img {
-  height: 46px;
+  height: 60px;      /* <<< aumenta qui */
+  max-width: 220px;
   width: auto;
-  max-width: 160px;
   opacity: 0.9;
   filter: grayscale(100%);
   transition: all 0.25s ease;
@@ -5263,68 +5258,3 @@ a img {
   }
 }
 
-
-/* ===== Companies marquee ===== */
-
-.logo-slider {
-  overflow: hidden;
-  width: 100%;
-  margin-top: 40px;
-}
-
-.logo-track {
-  display: flex;
-  align-items: center;
-  gap: 80px;
-  animation: scroll-logos 25s linear infinite;
-}
-
-.logo-track img {
-  height: 10px;   /* ← DIMENSIONE LOGHI */
-  width: auto;
-  opacity: 0.8;
-  transition: 0.3s;
-}
-
-.logo-track img:hover {
-  opacity: 1;
-  transform: scale(1.05);
-}
-
-/* animazione */
-@keyframes scroll-logos {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
-}
-
-/* ===== Companies strip: hard clamp sizes ===== */
-
-.companies-strip {
-  width: 100%;
-  overflow: hidden;
-  padding: 20px 0;
-}
-
-.companies-strip .track {
-  display: flex;
-  align-items: center;
-  gap: 60px;
-  white-space: nowrap;
-  animation: companies-scroll 18s linear infinite;
-}
-
-/* prende IMG + SVG + OBJECT + EMBED (tutto) */
-.companies-strip img,
-.companies-strip svg,
-.companies-strip object,
-.companies-strip embed {
-  height: 44 !important;     /* <<< QUI LA DIMENSIONE */
-  width: auto !important;
-  max-height: 44 !important;
-  display: block;
-}
-
-@keyframes companies-scroll {
-  0%   { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
-}
