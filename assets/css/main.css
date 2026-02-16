@@ -5223,13 +5223,13 @@ a img {
 }
 
 .logo-item {
-  height: 70px;
-  min-width: 160px;
+  height: 100px;
+  min-width: 200px;
 }
 
 .logo-item img {
-  height: 60px;      /* <<< aumenta qui */
-  max-width: 220px;
+  height: 90px;      /* <<< aumenta qui */
+  max-width: 300px;
   width: auto;
   opacity: 0.9;
   filter: grayscale(100%);
